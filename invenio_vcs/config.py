@@ -24,6 +24,8 @@
 
 from datetime import timedelta
 
+VCS_PROVIDERS = []
+
 GITHUB_WEBHOOK_RECEIVER_ID = "github"
 """Local name of webhook receiver."""
 
