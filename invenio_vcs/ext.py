@@ -27,14 +27,14 @@
 
 from flask import current_app, request
 from flask_menu import current_menu
+from invenio_github.api import GitHubRelease
+from invenio_github.providers import get_provider_list
+from invenio_github.utils import obj_or_import_string
 from invenio_i18n import LazyString
 from invenio_i18n import gettext as _
 from invenio_theme.proxies import current_theme_icons
 from six import string_types
 from werkzeug.utils import cached_property, import_string
-
-from invenio_github.api import GitHubRelease
-from invenio_github.utils import obj_or_import_string
 
 from . import config
 
@@ -68,7 +68,7 @@ class InvenioGitHub(object):
     def init_app(self, app):
         """Flask application initialization."""
         self.init_config(app)
-        app.extensions["invenio-github"] = self
+        app.extensions["invenio-vcs"] = self
 
     def init_config(self, app):
         """Initialize configuration."""
@@ -97,7 +97,7 @@ def init_menu(app):
                 icon=LazyString(
                     lambda: f'<i class="{current_theme_icons.github}"></i>'
                 ),
+                order=10,
+                active_when=lambda: request.endpoint.startswith("invenio_vcs."),
             ),
-            order=10,
-            active_when=lambda: request.endpoint.startswith("invenio_github."),
         )
