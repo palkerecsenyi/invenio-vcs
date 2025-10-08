@@ -41,10 +41,10 @@ def test_init():
     """Test extension initialization."""
     app = Flask("testapp")
     ext = InvenioVCS(app)
-    assert "invenio-github" in app.extensions
+    assert "invenio-vcs" in app.extensions
 
     app = Flask("testapp")
     ext = InvenioVCS()
-    assert "invenio-github" not in app.extensions
+    assert "invenio-vcs" not in app.extensions
     ext.init_app(app)
-    assert "invenio-github" in app.extensions
+    assert "invenio-vcs" in app.extensions
