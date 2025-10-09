@@ -25,7 +25,7 @@
 Authors
 =======
 
-Invenio module that adds GitHub integration to the platform.
+Invenio module that adds VCS integration to the platform.
 
 - Adrian Pawel Baran <adrian.pawel.baran@cern.ch>
 - Alexander Ioannidis <a.ioannidis@cern.ch>

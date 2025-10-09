@@ -23,19 +23,19 @@
 # waive the privileges and immunities granted to it by virtue of its status
 # as an Intergovernmental Organization or submit itself to any jurisdiction.
 
-"""Invenio-GitHub errors."""
+"""Invenio-vcs errors."""
 
 from invenio_i18n import gettext as _
 
 
 class VCSError(Exception):
-    """General GitHub error."""
+    """General vcs error."""
 
 
 class RepositoryAccessError(VCSError):
     """Repository access permissions error."""
 
-    message = _("The user cannot access the github repository")
+    message = _("The user cannot access the vcs repository")
 
     def __init__(self, user=None, repo=None, repo_id=None, message=None):
         """Constructor."""
@@ -91,8 +91,8 @@ class ReleaseAlreadyReceivedError(VCSError):
         self.release = release
 
 
-class CustomGitHubMetadataError(VCSError):
-    """Invalid Custom GitHub Metadata file."""
+class CustomVCSMetadataError(VCSError):
+    """Invalid Custom Metadata file."""
 
     message = _("The metadata file is not valid JSON.")
 
@@ -102,10 +102,10 @@ class CustomGitHubMetadataError(VCSError):
         self.file = file
 
 
-class GithubTokenNotFound(VCSError):
-    """Oauth session token was not found."""
+class VCSTokenNotFound(VCSError):
+    """OAuth session token was not found."""
 
-    message = _("The oauth session token was not found.")
+    message = _("The OAuth session token was not found.")
 
     def __init__(self, user=None, message=None):
         """Constructor."""
@@ -146,7 +146,7 @@ class ReleaseNotFound(VCSError):
 
 
 class UnexpectedProviderResponse(VCSError):
-    """Request to Github API returned an unexpected error."""
+    """Request to VCS API returned an unexpected error."""
 
     message = _("Provider API returned an unexpected error.")
 

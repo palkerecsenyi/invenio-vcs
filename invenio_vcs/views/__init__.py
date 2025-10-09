@@ -20,4 +20,4 @@
 # granted to it by virtue of its status as an Intergovernmental Organization
 # or submit itself to any jurisdiction.
 
-"""Implement views for GitHub integration."""
+"""Implement views for the VCS integration."""
