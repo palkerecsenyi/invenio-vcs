@@ -9,6 +9,6 @@
 API Docs
 ========
 
-invenio_github
+invenio_vcs
 --------------
 

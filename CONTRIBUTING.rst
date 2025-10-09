@@ -10,7 +10,7 @@ Types of Contributions
 Report Bugs
 ~~~~~~~~~~~
 
-Report bugs at https://github.com/inveniosoftware/invenio-github/issues.
+Report bugs at https://github.com/inveniosoftware/invenio-vcs/issues.
 
 If you are reporting a bug, please include:
 
@@ -33,7 +33,7 @@ is open to whoever wants to implement it.
 Write Documentation
 ~~~~~~~~~~~~~~~~~~~
 
-Invenio-GitHub could always use more documentation, whether as part of the
+Invenio-VCS could always use more documentation, whether as part of the
 official Invenio-GitHub docs, in docstrings, or even on the web in blog posts,
 articles, and such.
 
@@ -41,7 +41,7 @@ Submit Feedback
 ~~~~~~~~~~~~~~~
 
 The best way to send feedback is to file an issue at
-https://github.com/inveniosoftware/invenio-github/issues.
+https://github.com/inveniosoftware/invenio-vcs/issues.
 
 If you are proposing a feature:
 
@@ -53,14 +53,14 @@ If you are proposing a feature:
 Get Started!
 ------------
 
-Ready to contribute? Here's how to set up `invenio-github` for local development.
+Ready to contribute? Here's how to set up `invenio-vcs` for local development.
 
 1. Fork the `invenio` repo on GitHub.
 2. Clone your fork locally:
 
    .. code-block:: console
 
-      $ git clone git@github.com:your_name_here/invenio-github.git
+      $ git clone git@github.com:your_name_here/invenio-vcs.git
 
 3. Install your local copy into a virtualenv. Assuming you have
    virtualenvwrapper installed, this is how you set up your fork for local
@@ -68,8 +68,8 @@ Ready to contribute? Here's how to set up `invenio-github` for local development
 
    .. code-block:: console
 
-      $ mkvirtualenv invenio-github
-      $ cd invenio-github/
+      $ mkvirtualenv invenio-vcs
+      $ cd invenio-vcs/
       $ pip install -e .[all]
 
 4. Create a branch for local development:
@@ -114,5 +114,5 @@ Before you submit a pull request, check that it meets these guidelines:
 2. If the pull request adds functionality, the docs should be updated. Put
    your new functionality into a function with a docstring.
 3. The pull request should work for Python 2.7, 3.3, 3.4 and 3.5. Check
-   https://travis-ci.org/inveniosoftware/invenio-github/pull_requests
+   https://travis-ci.org/inveniosoftware/invenio-vcs/pull_requests
    and make sure that the tests pass for all supported Python versions.

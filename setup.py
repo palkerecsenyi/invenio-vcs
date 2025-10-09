@@ -23,7 +23,7 @@
 # waive the privileges and immunities granted to it by virtue of its status
 # as an Intergovernmental Organization or submit itself to any jurisdiction.
 
-"""Invenio module that adds GitHub integration to the platform."""
+"""Invenio module that adds VCS integration to the platform."""
 
 from setuptools import setup
 

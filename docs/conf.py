@@ -130,8 +130,8 @@ html_theme_options = {
     "github_banner": True,
     "show_powered_by": False,
     "extra_nav_links": {
-        "invenio-vcs@GitHub": "https://github.com/inveniosoftware/invenio-github",
-        "invenio-vcs@PyPI": "https://pypi.python.org/pypi/invenio-github/",
+        "invenio-vcs@GitHub": "https://github.com/inveniosoftware/invenio-vcs",
+        "invenio-vcs@PyPI": "https://pypi.python.org/pypi/invenio-vcs/",
     },
 }
 
@@ -307,7 +307,7 @@ texinfo_documents = [
         "Invenio-VCS Documentation",
         author,
         "invenio-vcs",
-        "Invenio module that adds GitHub integration to the platform.",
+        "Invenio module that adds vcs integration to the platform.",
         "Miscellaneous",
     ),
 ]
