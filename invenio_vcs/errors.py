@@ -166,7 +166,10 @@ class ReleaseZipballFetchError(VCSError):
 
 
 class UserInfoNoneError(VCSError):
+    """VCS provider did not return profile info."""
+
     message = _("Provider did not return user profile information.")
 
     def __init__(self, message=None) -> None:
+        """Constructor."""
         super().__init__(message or self.message)
