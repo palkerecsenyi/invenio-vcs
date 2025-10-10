@@ -5,7 +5,10 @@
 # Invenio is free software; you can redistribute it and/or modify it
 # under the terms of the MIT License; see LICENSE file for more details.
 
-"""Configuration for the VCS module."""
+"""You can use these options to configure the Invenio-VCS module.
+
+Other than ``VCS_PROVIDERS``, they are all optional and configured with reasonable defaults.
+"""
 
 from typing import TYPE_CHECKING
 
@@ -15,6 +18,12 @@ if TYPE_CHECKING:
     from invenio_vcs.providers import RepositoryServiceProviderFactory
 
 VCS_PROVIDERS = []
+"""The list of RepositoryProviderFactory instances.
+
+These will be visible to the user in their settings and they will be able to sync repositories
+from all of them. Multiple instances of different providers as well as of the same provider
+can be combined in this list, but each provider must have a unique ``id`` and ``credentials_key``.
+"""
 
 VCS_RELEASE_CLASS = "invenio_vcs.service:VCSRelease"
 """VCSRelease class to be used for release handling."""
