@@ -9,6 +9,8 @@
 # and relicensed under MIT with permission from the authors.
 """Fixture test impl for GitLab."""
 
+from __future__ import annotations
+
 from typing import Any, Iterator
 from unittest.mock import MagicMock, patch
 

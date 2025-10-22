@@ -29,3 +29,5 @@ on:
 jobs:
   Tests:
     uses: inveniosoftware/workflows/.github/workflows/tests-python.yml@uv
+    with:
+      extras: tests,github,gitlab

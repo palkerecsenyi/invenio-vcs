@@ -6,8 +6,8 @@
 # it under the terms of the MIT License; see LICENSE file for more details.
 """Fixture test impl for GitHub."""
 
-import os
-from base64 import b64encode
+from __future__ import annotations
+
 from io import BytesIO
 from typing import Any, Iterator
 from unittest.mock import MagicMock, patch
