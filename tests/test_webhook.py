@@ -55,7 +55,7 @@ def test_webhook_post(
 
     # Enable repository webhook.
     db_repo.hook = generic_webhook.id
-    db_repo.enabled_by_id = tester_id
+    db_repo.enabled_by_user_id = tester_id
     db.session.add(db_repo)
     db.session.commit()
 
@@ -114,7 +114,7 @@ def test_webhook_post_fail(
 
     # Enable repository webhook.
     db_repo.hook = generic_webhook.id
-    db_repo.enabled_by_id = tester_id
+    db_repo.enabled_by_user_id = tester_id
 
     # Create an invalid payload (fake repo)
     fake_payload = json.dumps(

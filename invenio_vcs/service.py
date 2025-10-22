@@ -381,12 +381,12 @@ class VCSService:
     def mark_repo_disabled(self, db_repo: Repository):
         """Marks a repository as disabled."""
         db_repo.hook = None
-        db_repo.enabled_by_id = None
+        db_repo.enabled_by_user_id = None
 
     def mark_repo_enabled(self, db_repo: Repository, hook_id: str):
         """Marks a repository as enabled."""
         db_repo.hook = hook_id
-        db_repo.enabled_by_id = self.provider.user_id
+        db_repo.enabled_by_user_id = self.provider.user_id
 
     def init_account(self):
         """Setup a new VCS account."""

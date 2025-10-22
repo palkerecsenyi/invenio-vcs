@@ -37,7 +37,7 @@ def test_badge_views(
     db_repo = Repository.get(
         provider=vcs_service.provider.factory.id, provider_id=generic_repo.id
     )
-    db_repo.enabled_by_id = test_user.id
+    db_repo.enabled_by_user_id = test_user.id
     db.session.add(db_repo)
 
     event = Event(

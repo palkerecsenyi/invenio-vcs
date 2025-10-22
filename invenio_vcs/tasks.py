@@ -114,7 +114,7 @@ def process_release(provider, release_id):
     ).one()
 
     provider = get_provider_by_id(provider).for_user(
-        release_model.repository.enabled_by_id
+        release_model.repository.enabled_by_user_id
     )
     release = current_vcs.release_api_class(release_model, provider)
 
