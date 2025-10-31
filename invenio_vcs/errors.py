@@ -73,15 +73,14 @@ class ReleaseAlreadyReceivedError(VCSError):
         self.release = release
 
 
-class CustomVCSMetadataError(VCSError):
-    """Invalid Custom Metadata file."""
+class CustomVCSReleaseNoRetryError(VCSError):
+    """An error prevented the release from being published, but the publish should not be retried.."""
 
     message = _("The metadata file is not valid JSON.")
 
-    def __init__(self, file=None, message=None):
+    def __init__(self, message=None):
         """Constructor."""
         super().__init__(message or self.message)
-        self.file = file
 
 
 class VCSTokenNotFound(VCSError):
