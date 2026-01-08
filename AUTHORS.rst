@@ -18,3 +18,4 @@ Invenio module that adds VCS integration to the platform.
 - Jiri Kuncar <jiri.kuncar@cern.ch>
 - Lars Holm Nielsen <lars.holm.nielsen@cern.ch>
 - Tibor Simko <tibor.simko@cern.ch>
+- Till Korten <t.korten@hzdr.de>
